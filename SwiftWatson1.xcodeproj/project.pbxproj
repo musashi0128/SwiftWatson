@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F33F7A761DF8658C00E301FD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33F7A751DF8658C00E301FD /* Social.framework */; };
 		F3AA66491DF740AB001680E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AA66481DF740AB001680E6 /* AppDelegate.swift */; };
 		F3AA664B1DF740AB001680E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AA664A1DF740AB001680E6 /* ViewController.swift */; };
 		F3AA664E1DF740AB001680E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AA664C1DF740AB001680E6 /* Main.storyboard */; };
 		F3AA66501DF740AB001680E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3AA664F1DF740AB001680E6 /* Assets.xcassets */; };
 		F3AA66531DF740AB001680E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AA66511DF740AB001680E6 /* LaunchScreen.storyboard */; };
+		F3AA665B1DF74F31001680E6 /* WatsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AA665A1DF74F31001680E6 /* WatsonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F33F7A751DF8658C00E301FD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F3AA66451DF740AB001680E6 /* SwiftWatson1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWatson1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3AA66481DF740AB001680E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3AA664A1DF740AB001680E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		F3AA664F1DF740AB001680E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3AA66521DF740AB001680E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3AA66541DF740AB001680E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3AA665A1DF74F31001680E6 /* WatsonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F33F7A761DF8658C00E301FD /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F33F7A741DF8658C00E301FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F33F7A751DF8658C00E301FD /* Social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F3AA663C1DF740AB001680E6 = {
 			isa = PBXGroup;
 			children = (
 				F3AA66471DF740AB001680E6 /* SwiftWatson1 */,
 				F3AA66461DF740AB001680E6 /* Products */,
+				F33F7A741DF8658C00E301FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				F3AA66481DF740AB001680E6 /* AppDelegate.swift */,
+				F3AA665A1DF74F31001680E6 /* WatsonViewController.swift */,
 				F3AA664A1DF740AB001680E6 /* ViewController.swift */,
 				F3AA664C1DF740AB001680E6 /* Main.storyboard */,
 				F3AA664F1DF740AB001680E6 /* Assets.xcassets */,
@@ -96,6 +111,7 @@
 				TargetAttributes = {
 					F3AA66441DF740AB001680E6 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = TV6NUH4G9D;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +154,7 @@
 			files = (
 				F3AA664B1DF740AB001680E6 /* ViewController.swift in Sources */,
 				F3AA66491DF740AB001680E6 /* AppDelegate.swift in Sources */,
+				F3AA665B1DF74F31001680E6 /* WatsonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TV6NUH4G9D;
 				INFOPLIST_FILE = SwiftWatson1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.musashi.SwiftWatson1;
@@ -270,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TV6NUH4G9D;
 				INFOPLIST_FILE = SwiftWatson1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.musashi.SwiftWatson1;
@@ -297,6 +316,7 @@
 				F3AA66591DF740AB001680E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
